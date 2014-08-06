@@ -1,0 +1,21 @@
+<div ng-controller="TodoController">
+    <div class="breadcrumb">
+        <h1>Todo App</h1>
+    </div> 
+
+    <div class="container">
+        <div class="row-fluid">
+            <input type="text" ng-model="todo_title"> 
+            <button class="btn btn-primary" ng-click="add_todo()">Add Todo</button>
+            <hr>
+            <ul class="todo-list">
+            	<li ng-repeat="todo in todos">
+            		<span ng-bind="todo.title"></span>
+            		<a href="" ng-click="delete_todo($index)">
+            		   <i class="icon icon-remove"></i>
+            		</a>
+            	</li>
+            </ul>
+        </div>
+    </div>
+</div>
