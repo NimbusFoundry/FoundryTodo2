@@ -36,7 +36,7 @@ foundry.ready(()->
 	if Nimbus.Auth.authorized()
 		foundry.init(()->
 			# remove indicator
-			$('#loading').addClass('loaded')  
+			$('#app-loading').addClass('loaded')  
 			$("#login_buttons").removeClass("redirect")
 		)
 	return

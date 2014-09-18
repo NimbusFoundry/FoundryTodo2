@@ -40,7 +40,7 @@
   foundry.ready(function() {
     if (Nimbus.Auth.authorized()) {
       foundry.init(function() {
-        $('#loading').addClass('loaded');
+        $('#app-loading').addClass('loaded');
         return $("#login_buttons").removeClass("redirect");
       });
     }
